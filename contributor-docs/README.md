@@ -1,2 +1,2 @@
-# Some page
+# Home
 Hello
