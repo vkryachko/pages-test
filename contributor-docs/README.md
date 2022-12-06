@@ -14,12 +14,18 @@ Urna molestie at elementum eu facilisis sed. Ullamcorper malesuada proin libero 
 
 ## Subsection 2
 
-Ac ut consequat semper viverra nam libero justo laoreet. Ultrices dui sapien eget mi proin sed. Sed nisi lacus sed viverra tellus in. Sagittis purus sit amet volutpat. Etiam dignissim diam quis enim lobortis. Neque egestas congue quisque egestas diam. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Hac habitasse platea dictumst quisque. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Pretium quam vulputate dignissim suspendisse in est.
+```java
+public final class Hello {
 
-Sit amet purus gravida quis blandit. At tempor commodo ullamcorper a lacus. Metus aliquam eleifend mi in nulla posuere sollicitudin. Ut etiam sit amet nisl purus in mollis nunc. Euismod elementum nisi quis eleifend quam adipiscing. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Neque sodales ut etiam sit amet nisl. Nunc sed velit dignissim sodales ut eu sem. Id diam maecenas ultricies mi eget mauris pharetra. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Nunc pulvinar sapien et ligula ullamcorper. Eget est lorem ipsum dolor. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. Faucibus interdum posuere lorem ipsum dolor sit amet. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Dignissim diam quis enim lobortis scelerisque. Netus et malesuada fames ac turpis egestas. Non diam phasellus vestibulum lorem sed risus.
+  @Override
+  public String toString() {
+    return "Hello";
+  }
+}
+```
 
-Tellus integer feugiat scelerisque varius morbi enim nunc. Tristique senectus et netus et malesuada. Porttitor leo a diam sollicitudin. Massa sed elementum tempus egestas sed. Ante metus dictum at tempor commodo ullamcorper a. Metus dictum at tempor commodo. Commodo nulla facilisi nullam vehicula ipsum. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Proin sed libero enim sed. Sed tempus urna et pharetra pharetra massa massa. At varius vel pharetra vel turpis. Maecenas ultricies mi eget mauris pharetra et. Non odio euismod lacinia at quis risus. Quam quisque id diam vel quam elementum pulvinar. Ultrices neque ornare aenean euismod elementum. Quam id leo in vitae. Neque gravida in fermentum et sollicitudin ac orci phasellus egestas.
-
-Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Mi proin sed libero enim sed faucibus turpis in eu. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Lacus sed turpis tincidunt id aliquet risus. Amet dictum sit amet justo donec enim diam vulputate ut. Pretium quam vulputate dignissim suspendisse. Suscipit adipiscing bibendum est ultricies. Tincidunt tortor aliquam nulla facilisi. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Lorem sed risus ultricies tristique nulla. Nascetur ridiculus mus mauris vitae. Sed vulputate mi sit amet mauris commodo quis imperdiet. Neque aliquam vestibulum morbi blandit cursus risus. Blandit turpis cursus in hac habitasse platea. Tellus orci ac auctor augue mauris augue neque gravida in. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris.
-
-Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Mi bibendum neque egestas congue. Urna et pharetra pharetra massa massa ultricies mi. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Enim facilisis gravida neque convallis a cras semper auctor. Nibh ipsum consequat nisl vel. Turpis egestas sed tempus urna et. Sed libero enim sed faucibus turpis in eu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mi proin sed libero enim sed faucibus. Tristique magna sit amet purus gravida quis blandit turpis. Sit amet commodo nulla facilisi. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Fusce ut placerat orci nulla pellentesque dignissim enim. At consectetur lorem donec massa sapien faucibus. Tempus urna et pharetra pharetra massa. Faucibus turpis in eu mi bibendum. Lacus sed viverra tellus in hac habitasse platea.
+```kotlin
+fun interface Iface {
+    val hello : String
+}
+```
