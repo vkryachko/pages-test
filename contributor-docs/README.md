@@ -1,2 +1,2 @@
-# Home
+# Contributor documentation
 Hello
