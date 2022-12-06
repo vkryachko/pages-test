@@ -56,7 +56,6 @@ Let's say you want to create an SDK named `firebase-foo`
   <summary>
     firebase-foo.gradle.kts
   </summary>
-  {: .text-delta }
 ```kotlin
 plugins {
   id("firebase-library")
@@ -100,7 +99,6 @@ dependencies {
   <summary>
     src/main/AndroidManifest.xml
   </summary>
-  {: .text-delta }
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright {{ 'now' | date: "%Y" }} Google LLC -->
@@ -133,11 +131,10 @@ dependencies {
 ### Create `com.google.firebase.foo.FirebaseFoo`
 
 For Kotlin
-<details markdown="block">
+<details open markdown="block">
   <summary>
     src/main/kotlin/com/google/firebase/foo/FirebaseFoo.kt
   </summary>
-  {: .text-delta }
 
 ```kotlin
 class FirebaseFoo {
@@ -157,7 +154,6 @@ For Java
   <summary>
     src/main/java/com/google/firebase/foo/FirebaseFoo.java
   </summary>
-  {: .text-delta }
 
 ```java
 public class FirebaseFoo {
@@ -174,11 +170,10 @@ public class FirebaseFoo {
 ### Create `com.google.firebase.foo.FirebaseFooRegistrar`
 
 For Kotlin
-<details markdown="block">
+<details open markdown="block">
   <summary>
     src/main/kotlin/com/google/firebase/foo/FirebaseFooRegistrar.kt
   </summary>
-  {: .text-delta }
 
 ```kotlin
 class FirebaseFooRegistrar : ComponentRegistrar {
