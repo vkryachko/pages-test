@@ -56,7 +56,7 @@ Let's say you want to create an SDK named `firebase-foo`
 1.  Add `firebase-foo` line to `subprojects.cfg` at the root of the tree.
 
 ### Update `firebase-foo.gradle.kts` with the following content:
-<details markdown="block">
+<details open markdown="block">
   <summary>
     firebase-foo.gradle.kts
   </summary>
@@ -99,7 +99,7 @@ dependencies {
 
 ### Create `src/main/AndroidManifest.xml` with the following content:
 
-<details markdown="block">
+<details open markdown="block">
   <summary>
     src/main/AndroidManifest.xml
   </summary>
@@ -199,8 +199,8 @@ For Java
 public class FirebaseFooRegistrar implements ComponentRegistrar {
   @Override
   public List<Component<?>> getComponents() {
-    // TODO: add components
-    return Collections.emptyList();
+    return Collections.singletonList(
+        Component.builder(FirebaseFoo.class).factory(c -> new FirebaseFoo()).build());
   }
 }
 ```
