@@ -13,7 +13,7 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 2
+  heading_level: 6
   # Maximum amount of previews per search result
   # Default: 3
   previews: 2
@@ -55,7 +55,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/firebase/firebase-android-sdk" # the github URL for your repo
-gh_edit_branch: "master" # the branch that your docs is served from
+gh_edit_repository: "https://github.com/vkryachko/pages-test" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_source: "contributor-docs" # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
