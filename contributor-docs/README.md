@@ -5,6 +5,6 @@ It describes how Firebase works on Android and provides guidance on how to build
 
 ## New to Firebase?
 
-- [Development Environment Setup]({% link env_setup.md})
-- [How Firebase works]({% link how_firebase_works.md %})
+- [Development Environment Setup]({% link onboarding/env_setup.md})
+- [How Firebase works]({% link in_depth/how_firebase_works.md %})
 - [Creating a new SDK]({% link onboarding/new_sdk.md %})
