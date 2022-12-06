@@ -1,11 +1,12 @@
 title: Contributor documentation
 description: Documentation and best practices for Android SDK development
 logo: "https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
-favicon: "https://firebase.google.com/favicon.ico"
 
 remote_theme: just-the-docs/just-the-docs
 plugins:
 - jekyll-remote-theme
+
+color_scheme: dark
 
 # Enable or disable the site search
 # Supports true (default) or false
