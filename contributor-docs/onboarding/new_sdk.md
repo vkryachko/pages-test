@@ -51,9 +51,10 @@ Let's say you want to create an SDK named `firebase-foo`
 1.  Create a file `firebase-foo/firebase-foo.gradle.kts`.
 1.  Add `firebase-foo` line to `subprojects.cfg` at the root of the tree.
 
-<details open markdown="block">
+Update `firebase-foo.gradle.kts` with the following content:
+<details markdown="block">
   <summary>
-    Update `firebase-foo.gradle.kts` with the following content:
+    firebase-foo.gradle.kts
   </summary>
   {: .text-delta }
 ```kotlin
