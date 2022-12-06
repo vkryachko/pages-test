@@ -1,3 +1,7 @@
+---
+parent: Onboarding
+---
+
 # Creating a new Firebase SDK
 
 Want to create a new SDK in 
