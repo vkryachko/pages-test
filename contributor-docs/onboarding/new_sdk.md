@@ -51,7 +51,7 @@ Let's say you want to create an SDK named `firebase-foo`
 1.  Create a file `firebase-foo/firebase-foo.gradle.kts`.
 1.  Add `firebase-foo` line to `subprojects.cfg` at the root of the tree.
 
-Update `firebase-foo.gradle.kts` with the following content:
+### Update `firebase-foo.gradle.kts` with the following content:
 <details markdown="block">
   <summary>
     firebase-foo.gradle.kts
@@ -77,6 +77,7 @@ android {
 
   compileSdk = targetSdkVersion
   defaultConfig {
+    namespace = "com.google.firebase.foo"
     // change this is you have custom needs.
     minSdk = minSdkVersion
     targetSdk = targetSdkVersion
@@ -92,3 +93,78 @@ dependencies {
 }
 ```
 </details>
+
+### Create `src/main/AndroidManifest.xml` with the following content:
+
+<details markdown="block">
+  <summary>
+    src/main/AndroidManifest.xml
+  </summary>
+  {: .text-delta }
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright {{ 'now' | date: "%Y" }} Google LLC -->
+<!-- -->
+<!-- Licensed under the Apache License, Version 2.0 (the "License"); -->
+<!-- you may not use this file except in compliance with the License. -->
+<!-- You may obtain a copy of the License at -->
+<!-- -->
+<!--      http://www.apache.org/licenses/LICENSE-2.0 -->
+<!-- -->
+<!-- Unless required by applicable law or agreed to in writing, software -->
+<!-- distributed under the License is distributed on an "AS IS" BASIS, -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. -->
+<!-- See the License for the specific language governing permissions and -->
+<!-- limitations under the License. -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+      <service android:name="com.google.firebase.components.ComponentDiscoveryService"
+          android:exported="false">
+          <meta-data
+              android:name="com.google.firebase.components:com.google.firebase.foo.FirebaseFooRegistrar"
+              android:value="com.google.firebase.components.ComponentRegistrar" />
+      </service>
+  </application>
+</manifest>
+```
+</details>
+
+### Create `com.google.firebase.foo.FirebaseFooRegistrar`
+
+For Kotlin
+<details markdown="block">
+  <summary>
+    src/main/kotlin/com/google/firebase/foo/FirebaseFooRegistrar.kt
+  </summary>
+  {: .text-delta }
+
+```kotlin
+class FirebaseFooRegistrar : ComponentRegistrar {
+  override fun getComponents(): List<Component<*>> {
+    // TODO: add components
+    return listOf()
+  }
+}
+```
+</details>
+
+For Java
+<details markdown="block">
+  <summary>
+    src/main/java/com/google/firebase/foo/FirebaseFooRegistrar.java
+  </summary>
+  {: .text-delta }
+
+```java
+public class FirebaseFooRegistrar implements ComponentRegistrar {
+  @Override
+  public List<Component<?>> getComponents() {
+    // TODO: add components
+    return Collections.emptyList();
+  }
+}
+```
+</details>
+
+Continue to [How Firebase works]({{ site.baseurl }}{% link in_depth/how_firebase_works.md %}).
