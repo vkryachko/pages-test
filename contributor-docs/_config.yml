@@ -2,7 +2,7 @@ title: Contributor documentation
 description: Documentation and best practices for Android SDK development
 logo: "https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg"
 
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 plugins:
 - jekyll-remote-theme
 
