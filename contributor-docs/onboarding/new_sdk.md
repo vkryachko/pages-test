@@ -130,6 +130,47 @@ dependencies {
 ```
 </details>
 
+### Create `com.google.firebase.foo.FirebaseFoo`
+
+For Kotlin
+<details markdown="block">
+  <summary>
+    src/main/kotlin/com/google/firebase/foo/FirebaseFoo.kt
+  </summary>
+  {: .text-delta }
+
+```kotlin
+class FirebaseFoo {
+  companion object {
+    @JvmStatic
+    val instance: FirebaseFoo
+      get() = getInstance(Firebase.app)
+
+    @JvmStatic fun getInstance(app: FirebaseApp): FirebaseFoo = app.get(FirebaseFoo::class.java)
+  }
+}
+```
+</details>
+
+For Java
+<details markdown="block">
+  <summary>
+    src/main/java/com/google/firebase/foo/FirebaseFoo.java
+  </summary>
+  {: .text-delta }
+
+```java
+public class FirebaseFoo {
+  public static FirebaseFoo getInstance() {
+    return getInstance(FirebaseApp.getInstance());
+  }
+  public static FirebaseFoo getInstance(FirebaseApp app) {
+    return app.get(FirebaseFoo.class);
+  }
+}
+```
+</details>
+
 ### Create `com.google.firebase.foo.FirebaseFooRegistrar`
 
 For Kotlin
@@ -141,10 +182,10 @@ For Kotlin
 
 ```kotlin
 class FirebaseFooRegistrar : ComponentRegistrar {
-  override fun getComponents(): List<Component<*>> {
-    // TODO: add components
-    return listOf()
-  }
+  override fun getComponents() =
+    listOf(
+      Component.builder(FirebaseFoo::class.java).factory { container -> FirebaseFoo() }.build()
+    )
 }
 ```
 </details>
@@ -154,7 +195,6 @@ For Java
   <summary>
     src/main/java/com/google/firebase/foo/FirebaseFooRegistrar.java
   </summary>
-  {: .text-delta }
 
 ```java
 public class FirebaseFooRegistrar implements ComponentRegistrar {
